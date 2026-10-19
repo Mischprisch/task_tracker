@@ -32,4 +32,4 @@ Before using the task tracker, add the repository folder to your `PATH` so you c
 - `list in-progress` [list tasks that are in progress]
 - `list done` [list tasks that are done]
 
-Project URL: <github.com/Mischprisch/task_tracker>
+Project URL: <https://github.com/Mischprisch/task_tracker>
