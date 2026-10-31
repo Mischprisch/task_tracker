@@ -38,7 +38,7 @@ def add_task(task):
         print("Task already exists")
         return
     created_at = datetime.datetime.now()
-    created_at = created_at.strftime("createdAt: %H:%M:%S, %d-%m-%Y")
+    created_at = created_at.strftime("created at: %H:%M:%S, %d-%m-%Y")
     all_tasks.append(task + ", " + created_at)
     print(f"Task added succesfully (ID: {len(all_tasks)})")
 
@@ -49,7 +49,7 @@ def update_task(task_id, task):
     elif len(task) < 1:
         return
     updated_at = datetime.datetime.now()
-    updated_at = updated_at.strftime("updatedAt: %H:%M:%S, %d-%m-%Y")
+    updated_at = updated_at.strftime("updated at: %H:%M:%S, %d-%m-%Y")
     all_tasks[task_id - 1] = task + ", " + updated_at
     print(f"Task has been updated (ID: {len(all_tasks)})")
 
@@ -179,7 +179,7 @@ elif args.command == "mark-in-progress":
 elif args.command == "mark-done":
     mark_done(args.done_id)
     save_data()
-elif args.command == "list" and args.status == None:
+elif args.command == "list":
     list_tasks()
 elif args.command == "list" and args.status == "todo":
     list_todo()
